@@ -1,0 +1,26 @@
+<!doctype html>  
+<html>  
+<head>  
+    <title>HTML5 Notification Example</title>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <script type="text/javascript">
+  
+    function RequestPermission (callback) {  
+        window.webkitNotifications.requestPermission(callback);  
+    }  
+    function showNotification(){//通过window.webkitNotifications可以判断浏览器是否支持notification  
+		if (window.webkitNotifications.checkPermission() > 0) {  
+			RequestPermission(showNotification);  
+		}else {  
+			window.webkitNotifications.createNotification("[imgurl]", "Title", "Body").show();  
+		}  
+    }  
+</script>  
+</head>  
+<body>  
+<br />  
+<h1>HTML5 Notification Example</h1>  
+<p>  
+<button onclick="showNotification()">Show Notification</button>  
+</body>  
+</html>  
