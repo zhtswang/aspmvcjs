@@ -12,7 +12,7 @@
                 }
             },
 	   format:function(str,params){
-		var result = str.replace('\{\\d+}\',function(match){
+		var result = str.replace("\{\\d+\}",function(match){
 			var index = match.replace('\{|\}','');
 			if(index+1>params.length){
 				return params[index];
@@ -164,7 +164,7 @@
     * Controllers will be only defined at internal, you can define your Controllers and Actions
     * Besides, you can call controller extend method by chain.
      */
-	AspMvcJs.Controller = {};
+    AspMvcJs.Controller = {};
     AspMvcJs.Controller.extend = function(controller){
         $.extend(this,controller);
         return this;
