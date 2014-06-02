@@ -3,7 +3,7 @@
 	AspMvcJs.version = "1.0";
 	
 	AspMvcJs.Util = (function(){
-        return {
+	return {
             log:function(msg){
                 if(console.log){
                     console.log(msg);
@@ -11,21 +11,22 @@
                     alert(msg);
                 }
             },
-		   format:function(str,params){
-				var result = str.replace('\{\\d+}\',function(match){
-					var index = match.replace('\{|\}','');
-					if(index+1>params.length){
-						return params[index];
-					}
-				});
-				return result;
-		   }
+	   format:function(str,params){
+		var result = str.replace('\{\\d+}\',function(match){
+			var index = match.replace('\{|\}','');
+			if(index+1>params.length){
+				return params[index];
+			}
+		});
+	        return result;
+   	  }
         }
 	})();
-    var Const = {
-        controllerSuffix: "Controller"
-    };
-
+	
+        var Const = {
+            controllerSuffix: "Controller"
+        };
+  
 	/* The MvcHandler is the core function of the framework, it will dispath all the request
 	PathMap E.g: {url:'user/get/202',controller:'user',param:[1],action:'get'}
 	*/	
