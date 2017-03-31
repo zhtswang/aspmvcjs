@@ -27,8 +27,8 @@ terry repositiry The usage of the Javascript
             Index:function(context){
                AspMvcJs.View.render(context);
             },
-			Home: function(context){
-				var templateId = context.viewId;
+	    Home: function(context){
+		var templateId = context.viewId;
 
                 var rootId = context.appendToElement;
                 var model = AspMvcJs.Model.extend(templateId,{
@@ -36,10 +36,10 @@ terry repositiry The usage of the Javascript
                     name:'Terry Zhang'
                 });
                 AspMvcJs.View.render(templateId,model,rootId);
-			}
+	    }
         }
     });
 
     htmlHelper.renderAction("Home","Index");
-	htmlHelper.renderAction("Home","Home",{viewId:'#divResult',appendToElement:'#divShow'});
+    htmlHelper.renderAction("Home","Home",{viewId:'#divResult',appendToElement:'#divShow'});
 </script>
