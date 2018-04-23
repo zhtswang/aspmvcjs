@@ -16,11 +16,13 @@ terry repositiry The usage of the Javascript
             <span>Name:${name}</span>
         </script>
 	</body>
-</html>
+
 <script type="text/javascript" src="app/lib/jquery.js"></script>
 <script type="text/javascript" src="app/lib/jquery.tmpl.min.js"></script>
 <script type="text/javascript" src="app/lib/aspmvcjs.js"></script>
+</html>
 
+Smaple Code
 <script type="text/javascript">
     AspMvcJs.Controller.extend({
         HomeController:{
