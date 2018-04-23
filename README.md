@@ -1,11 +1,12 @@
 aspmvcjs
 ========
-0.Init
-Import the below script for the html page
-<script type="text/javascript" src="app/lib/jquery.js" />
-<script type="text/javascript" src="app/lib/jquery.tmpl.min.js" />
-<script type="text/javascript" src="app/lib/aspmvcjs.js" />
-1. Html Page
+### Init Import the below script for the html page
+<script type="text/javascript" src="app/lib/jquery.js" /> <br>
+<script type="text/javascript" src="app/lib/jquery.tmpl.min.js" /><br>
+<script type="text/javascript" src="app/lib/aspmvcjs.js" /><br>
+
+#### Html Page
+```
 <html>
 	<head>
 		<title>Javascript Model Showcase</title>
@@ -15,14 +16,16 @@ Import the below script for the html page
         <div id="divShow">
 
         </div>
-		<script id="divResult" type="text/html">
+	<script id="divResult" type="text/html">
             <span>Id:${id}</span>
             <span>Name:${name}</span>
         </script>
 	</body>
 </html>
-
-===Smaple Code
+```
+<br>
+Smaple Code
+------
     AspMvcJs.Controller.extend({
         HomeController:{
             Index:function(context){
