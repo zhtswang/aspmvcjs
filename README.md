@@ -1,7 +1,11 @@
 aspmvcjs
 ========
-
-terry repositiry The usage of the Javascript
+0.Init
+Import the below script for the html page
+<script type="text/javascript" src="app/lib/jquery.js" />
+<script type="text/javascript" src="app/lib/jquery.tmpl.min.js" />
+<script type="text/javascript" src="app/lib/aspmvcjs.js" />
+1. Html Page
 <html>
 	<head>
 		<title>Javascript Model Showcase</title>
@@ -16,14 +20,9 @@ terry repositiry The usage of the Javascript
             <span>Name:${name}</span>
         </script>
 	</body>
-
-<script type="text/javascript" src="app/lib/jquery.js"></script>
-<script type="text/javascript" src="app/lib/jquery.tmpl.min.js"></script>
-<script type="text/javascript" src="app/lib/aspmvcjs.js"></script>
 </html>
 
-Smaple Code
-<script type="text/javascript">
+===Smaple Code
     AspMvcJs.Controller.extend({
         HomeController:{
             Index:function(context){
@@ -44,4 +43,3 @@ Smaple Code
 
     htmlHelper.renderAction("Home","Index");
     htmlHelper.renderAction("Home","Home",{viewId:'#divResult',appendToElement:'#divShow'});
-</script>
